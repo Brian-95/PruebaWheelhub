@@ -1,0 +1,24 @@
+@use '../../scss/base';
+
+.logo-container {
+  @apply flex flex-col items-center;
+  @apply relative mx-auto my-4;
+  @apply w-full max-w-[300px];
+
+  img {
+    @apply w-full h-auto object-contain;
+  }
+
+  &::after {
+    @apply absolute top-1/2 -translate-y-1/2;
+    @apply -right-8 text-base;
+    @apply text-gray-700 uppercase tracking-widest;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  .title {
+    @apply text-lg text-gray-700;
+    @apply mt-4 text-center font-medium;
+  }
+} 

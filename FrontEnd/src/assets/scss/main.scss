@@ -1,0 +1,47 @@
+@use 'sass:color';
+@use './base';
+
+// Variables y estilos base
+@use './base/typography' as *;
+
+// Layouts
+@use './layouts/app';
+
+// Componentes
+@use './components/logo';
+@use './components/forms';
+@use './components/transitions';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, 
+  body {
+    @apply m-0 p-0 h-full overflow-hidden;
+  }
+}
+
+@layer components {
+  .app-container {
+    @apply min-h-screen h-screen;
+    @apply flex items-center justify-center;
+    @apply fixed inset-0;
+    @apply p-8 overflow-hidden;
+    @apply bg-gradient-to-br from-green-100 to-white;
+  }
+
+  .app-card {
+    @apply bg-white rounded-2xl shadow-xl;
+    @apply p-10 w-full max-w-[600px];
+    @apply relative overflow-hidden;
+
+    &::before {
+      content: '';
+      @apply absolute top-0 left-0;
+      @apply w-full h-1;
+      @apply bg-gradient-to-r from-green-500 to-green-300;
+    }
+  }
+} 

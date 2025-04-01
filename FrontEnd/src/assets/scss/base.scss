@@ -1,0 +1,41 @@
+@use 'sass:color';
+
+// Colors
+$text-color: #313131;
+$step-color: #788f9c;
+$step-hover-color: #3b6a86;
+$green-color: #1ec86c;
+$light-green-color: #9cdcb9;
+$dark-green-color: #07542a;
+
+$white: #FFFFFF;
+$black: #000000;
+$red: red;
+
+// Component colors
+$color-primary: $green-color;
+$color-primary-hover: $dark-green-color;
+$color-secondary: $step-color;
+$color-secondary-hover: $step-hover-color;
+$color-text-primary: $text-color;
+$color-text-secondary: $step-color;
+$color-background: $white;
+$color-border: $step-color;
+$color-disabled: rgba($black, 0.5);
+
+// Progress bar colors
+$color-progress-bg: $step-color;
+$color-progress-fill: $green-color;
+
+// Password strength colors
+$color-strength-weak: $red;
+$color-strength-medium: $step-color;
+$color-strength-strong: $green-color;
+$color-strength-very-strong: $dark-green-color;
+
+// Transitions
+$transition-base: 0.3s ease-in-out;
+
+// Export everything as a module
+@forward 'sass:color';
+@forward 'sass:math'; 

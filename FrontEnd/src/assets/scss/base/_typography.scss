@@ -1,0 +1,12 @@
+// Importar fuentes de Google
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    @apply font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-semibold;
+  }
+} 

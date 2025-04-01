@@ -1,0 +1,25 @@
+@use '../base' as *;
+
+@layer components {
+  .fade-enter-active,
+  .fade-leave-active {
+    @apply transition-opacity duration-300 ease-in-out;
+  }
+
+  .fade-enter-from,
+  .fade-leave-to {
+    @apply opacity-0;
+  }
+}
+
+@layer utilities {
+  .animate-spin-custom {
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+} 
